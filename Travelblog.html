@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Featured Travel Blog Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #fafafa;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: darkblue;
+    }
+
+    .blog-section {
+      display: flex;
+      gap: 20px;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .blog-post {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .blog-post img[src$=".jpeg"], 
+    .blog-post img[src$=".jpg"] {
+      width: 100%;
+      height: auto;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    .blog-post h2 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .blog-post p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Highlight only https links in red */
+    a[href^="https"] {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile: max width 600px */
+    @media (max-width: 600px) {
+      .blog-section {
+        flex-direction: column;
+        font-size: 14px;
+      }
+    }
+
+    /* Portrait orientation */
+    @media (orientation: portrait) {
+      .blog-section {
+        background-color: lightyellow;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Featured Travel Blog</h1>
+
+  <div class="blog-section">
+    <!-- Post 1 -->
+    <div class="blog-post">
+      <h2>Hidden Gems of Europe</h2>
+      <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg" alt="European town view">
+      <p>Forget the crowded tourist spots! Explore small towns and hidden gems in Europe where culture, food, and history blend beautifully away from the crowds.</p>
+      <a href="https://www.lonelyplanet.com/articles">Read More</a>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="blog-post">
+      <h2>Backpacking Through Asia</h2>
+      <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Backpacker in mountains">
+      <p>Backpacking across Asia offers unforgettable experiences—from night markets in Thailand to the Himalayan treks. Here’s a guide to planning your journey.</p>
+      <a href="https://www.nomadicmatt.com/travel-guides/">Read More</a>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="blog-post">
+      <h2>Top Beach Destinations</h2>
+      <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg" alt="Beach sunset">
+      <p>If golden sands, turquoise waters, and stunning sunsets are your thing, these beaches around the world should definitely be on your travel bucket list.</p>
+      <a href="https://www.travelandleisure.com/trip-ideas/beach-vacations">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
